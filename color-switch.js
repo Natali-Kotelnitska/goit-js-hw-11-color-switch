@@ -8,7 +8,7 @@ const refs = {
 refs.startBtn.addEventListener('click', onRandomBodyColor);
 refs.stopBtn.addEventListener('click', onStopBtn);
 
-function onRandomBodyColor(evt) {
+function onRandomBodyColor() {
   intervalID = setInterval(() => {
     refs.body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
   }, 1000);
